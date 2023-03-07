@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1400">
+    <link href="./video/FABICON.png" rel="icon" type="image/png" sizes="32x32"><!--파비콘-->
+    <title>에데니코 소개 영상</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        iframe {
+            display: block;
+            margin: 50px auto;
+            background-size: cover;
+            z-index: 150;
+            background-size: cover;
+            
+            /* border-radius: 10px 10px 10px 10px;
+            background-color: #543939;
+            color: #fff;
+            padding: 10px;
+            text-decoration: none;
+            box-shadow: 10px 10px 0 #97bfce93; */
+        }
+
+
+        body {
+            background: url(./video/edenico.jpg) no-repeat;
+            height: 100vh;
+            background-size: 200%;
+
+
+        }
+
+        .images {
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 30px;
+            position: relative;
+            height: 49px;
+        }
+
+
+
+        .rice {
+            position: absolute;
+            top: 532px;
+            left: -9px;
+            opacity: 0.3;
+            background-size: cover;
+            z-index: -1;
+        }
+
+        .cup {
+            position: absolute;
+            top: 775px;
+            left: 337px;
+            z-index: -1;
+            opacity: 0.3;
+            background-size: cover;
+        }
+
+
+        /* 버튼 */
+        ul {
+            list-style: none;
+            position: fixed;
+            bottom: 50px;
+            right: 50px;
+            text-align: center;
+        }
+
+        ul li {
+            margin: 10px;
+        }
+
+        ul li a {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn_1 li a {
+            background: #d78022;
+            color: #e9e0ce;
+        }
+
+        /* 버블효과 */
+        .bubble {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        span {
+            display: block;
+            position: absolute;
+            bottom: -100px;
+            width: 40px;
+            height: 40px;
+            background: white;
+            opacity: 0.3;
+            border-radius: 50%;
+            animation: bubble 15s ease-in-out infinite;
+        }
+
+        .bubble span:nth-child(1) {
+            width: 40px;
+            height: 40px;
+            left: 0%;
+            animation-duration: 15s;
+        }
+
+        .bubble span:nth-child(2) {
+            width: 20px;
+            height: 20px;
+            left: 10%;
+            animation-duration: 15s;
+            animation-delay: 1s;
+        }
+
+        .bubble span:nth-child(3) {
+            width: 50px;
+            height: 50px;
+            left: 20%;
+            animation-duration: 17s;
+            animation-delay: 2s;
+        }
+
+        .bubble span:nth-child(4) {
+            width: 80px;
+            height: 80px;
+            left: 40%;
+            animation-duration: 14s;
+            animation-delay: 0s;
+        }
+
+        .bubble span:nth-child(5) {
+            width: 35px;
+            height: 35px;
+            left: 50%;
+            animation-duration: 13s;
+            animation-delay: 1s;
+        }
+
+        .bubble span:nth-child(6) {
+            width: 45px;
+            height: 45px;
+            left: 60%;
+            animation-duration: 15s;
+            animation-delay: 3s;
+        }
+
+        .bubble span:nth-child(7) {
+            width: 25px;
+            height: 25px;
+            left: 70%;
+            animation-duration: 14s;
+            animation-delay: 2s;
+        }
+
+        .bubble span:nth-child(8) {
+            width: 80px;
+            height: 80px;
+            left: 80%;
+            animation-duration: 13s;
+            animation-delay: 1s;
+        }
+
+        @keyframes bubble {
+            0% {
+                bottom: -100px;
+                transform: translateX(0);
+            }
+
+            35% {
+                transform: translateX(100px);
+            }
+
+            70% {
+                transform: translateX(200px);
+            }
+
+            100% {
+                bottom: 110%;
+                transform: translateX(0);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <a href="../index.html#portfolio-section" class="home"></a>
+
+    <div class="images">
+        <img src="./video/logo.png" alt="로고">
+        <!-- <img class="" src="" alt="1">
+        <img class="" src="" alt="2"> -->
+
+
+
+    </div>
+
+    <div class="wrap">
+        <div class="video">
+            <!--video-->
+            <iframe width="1000" height="562.5" src="https://www.youtube.com/embed/iL25-B_IjOY?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <!--video-->
+        </div>
+    </div>
+    <ul class="btn_1">
+        <li><a href="#">top</a>
+        <li>
+        <li><a href="../index.html">home</a>
+        <li>
+    </ul>
+    <!--bubble-->
+    <div class="bubble">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <!--bubble-->
+</body>
+
+</html>
