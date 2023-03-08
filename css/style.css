@@ -770,6 +770,9 @@ a.active {
     .project_btn {
         margin: 2px;
     }
+    .about-border {
+        z-index: -1;
+    }
     #home .container{
         min-width: 500px;
     }
@@ -848,6 +851,7 @@ a.active {
 
     .about-border {
         display: none;
+        
     }
     .timeline-event-copy h3 {
         font-size: 1.5em;
